@@ -1,0 +1,53 @@
+@import url(Style/header.css);
+@import url(reset.css);
+@import url(banner.css);
+@import url(carrossel.css);
+@import url(topico.css);
+@import url(Intro.css);
+@import url(rodape.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #ebecee;
+    --amarelo: #fac213;
+    --branco: #FFFFFF;
+    --fonte-principal: "Space Mono";
+    --cinza-claro: #d6cece;
+    --preto: #0C0C0C;
+    --fonte-secundaria: "Montserrat";
+    --fonte-terciaria:"Dosis";
+    
+
+}
+
+
+body{
+    background-color: var(--branco);
+    
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .app__section-banner-container {
+        width: 48rem;
+    }
+}
+
+/* Para Celulares */
+@media (max-width: 767px) {
+    .app__section-banner-container {
+        width: 32rem;
+    }
+
+    .app__title {
+        font-size: 2.6rem;
+    }
+
+    .app__card-timer {
+        font-size: 6rem;
+    }
+}

@@ -1,0 +1,168 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fac213;
+    padding: 0.3em;
+}
+
+.container__botao{
+    display: none;
+}
+
+.logo__mobile{
+    display: none;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    background-color: #fac213;
+}
+
+.banner__imagem{
+    padding: 0.5em;
+    max-width: 100%;
+    
+}
+
+.banner__imagem-logo{
+    display: flex;
+    align-items:center;
+}
+
+
+.banner__pesquisa{
+    background-color: var(--amarelo);
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 30%;
+}
+
+
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-style: 400;
+    text-align: center;
+    color: var(--branco);  
+    background: url("./Assets/Lupa.svg") no-repeat;
+    background-position: 1em;
+    
+}
+
+
+.menu ul {
+   list-style-type: none;
+   
+}
+
+.menu ul {
+  background-color: var(--amarelo);
+
+}
+
+.menu ul li {
+    display: inline;
+    position: relative;
+    font-size: 18px;
+    
+    
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: var(--branco);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font-family: var(--fonte-secundaria);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    color: var(--preto);
+}
+
+/* sub menu*/
+.menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+
+}
+
+.menu ul li:hover ul{
+    display: block;  
+}
+
+.menu ul ul{
+    width: 150px;
+}
+
+.menu ul ul li a {
+    display: block;
+}
+
+
+@media (max-width: 767px) {
+    .banner__pesquisa {
+        display: none;
+    }
+
+    .banner__imagem-logo{
+        display: flex;
+        width: 100px;
+        height: 100px;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        width: 80px;
+        height: 24px;
+        background-image: url("./Assets/list.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+
+    }
+
+    .container{
+        position: relative;
+    }
+
+    .container__botao:checked ~.menu{
+        display: block;
+    }
+    
+    .menu ul li a {
+        display: flex;
+        position: relative;
+
+    }
+
+    .lista-menu__item{
+        display: none;
+    }
+
+    .logo__tela{
+        display: none;
+    }
+
+    .logo__mobile{
+        display: block;
+        width: 10rem;
+        height: 5rem;
+    }
+    
+    
+}

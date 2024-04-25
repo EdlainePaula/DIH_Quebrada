@@ -1,0 +1,44 @@
+.intro{
+ display: flex;
+ justify-content: space-around;
+ margin: 2em 0 2em 0;
+background: url("./Assets/cuidadocapilar.png") no-repeat;
+
+
+}
+
+.lupa__pesquisa{
+    display:none;
+}
+
+.intro__min{
+    display: none;
+}
+
+@media (max-width: 767px) {
+.lupa__pesquisa{
+    display:block;
+}
+
+.lupa__pesquisa{
+    display: flex;
+    align-content: center;
+    margin: 2em 3em;
+    background-color: var(--branco);
+    border: 1px solid var(--preto);
+    border-radius: 24px;
+    padding: 1em;
+    width: 80vw;
+    
+}
+
+.intro__imagem{
+    display: none;
+}
+
+.intro__min{
+    display: flex;
+    max-width: 100%;
+}
+
+}

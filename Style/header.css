@@ -1,0 +1,25 @@
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cinza-claro);
+    align-items: center;
+    position: relative;
+}
+
+.titulo__negrito{
+    font-weight: 700;
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+    
+
+}
+
+
+
+
