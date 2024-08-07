@@ -1,0 +1,183 @@
+.container{
+    position: fixed;
+    z-index: 100;
+    top:30px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container__botao{
+    display: none;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+   
+}
+
+
+.logo__mobile{
+    display: none;
+}
+
+.banner__nov{
+    justify-content:center;
+    margin-top: 10vw;
+    margin-left: 220px;
+}
+
+
+.banner__imagem-logo{
+    display: flex;
+    align-items:center;
+}
+
+
+.banner__pesquisa{
+    background-color: var(--amarelo);
+    border: 1px solid var(--preto);
+    border-radius: 24px;
+    padding: 1em;
+    width: 30%;
+}
+
+
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: .5;
+    font-style: 400;
+    text-align: center;
+    color: #000000;  
+    background: url("../Assets/lupa.pesquisa.svg") no-repeat;
+    background-position: 1em;
+    
+}
+
+
+.menu ul {
+   list-style-type: none;
+   
+}
+
+.menu ul {
+  background-color: var(--amarelo);
+
+}
+
+.menu ul li {
+    display: inline;
+    position: relative;
+    font-size: 1rem;
+    
+    
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: #222222;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    font-family: var(--fonte-secundaria);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    color: var(--preto);
+}
+
+/* sub menu*/
+.menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+
+}
+
+.menu ul li:hover ul{
+    display: block;  
+}
+
+.menu ul ul{
+    width: 150px;
+}
+
+.menu ul ul li a {
+    display: block;
+}
+
+
+@media (max-width: 767px) {
+
+    .banner__nov{
+        display: flex;
+        justify-content:space-around;
+        margin:0;
+        width: 100%;
+        margin-right:0;
+    }
+    .banner__pesquisa {
+        display: none;
+    }
+
+    .banner__imagem-logo{
+        display: flex;
+        width: 100px;
+        height: 100px;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        width: 80px;
+        height: 24px;
+        background-image: url("./Assets/list.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+
+    }
+
+    .container{
+        position: relative;
+    }
+
+    .container__botao:checked ~.menu{
+        display: block;
+    }
+    
+    .menu ul li a {
+        display: flex;
+        position: relative;
+
+    }
+
+    .lista-menu__item{
+        display: none;
+    }
+
+    .logo__tela{
+        display: none;
+    }
+
+    .logo__mobile{
+        display: block;
+        width: 10rem;
+        height: 5rem;
+    }
+    
+    
+}

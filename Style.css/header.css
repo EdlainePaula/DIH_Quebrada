@@ -1,0 +1,60 @@
+.cabecalho{
+    width: 100%;
+    top:0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    max-height: 100px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    
+       
+}
+
+#caminhão{
+    max-height: 30px;
+
+}
+
+.caminhao__frete{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    animation: direcao;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+    inline-size: 1.5;
+
+}
+
+.titulo__negrito{
+    font-weight: 700;
+}
+
+@keyframes direcao{
+    from{
+        transform: translateX(0);
+    }
+
+
+    to{
+        transform: translateX(calc(100vw - 20px));
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+    
+
+}
+
+
+
+

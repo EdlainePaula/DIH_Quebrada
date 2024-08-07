@@ -1,0 +1,259 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../main.js" defer></script>
+ 
+    
+</head> 
+<body>
+    <header class="cabecalho">
+        <img class="caminhao__frete" src="../Assets/Union.svg" id="caminhão"></i>
+        <h1 class= "caminhao__frete"><b class="titulo__negrito"> FRETE GRÁTIS</b> ACIMA DE R$130,00</h1>
+    </header>
+    <section class="container">
+        <a href="index.html">
+            <img class= "logo__tela" src="../Assets/quebrada.jpeg" alt="" width="90vw">
+        </a>
+        <input id="inputBusca" type=" search" class="banner__pesquisa" placeholder="O que você procura?">
+        <input type="checkbox" id="menu" class="container__botao banner__imagem">
+        <label for="menu" >
+            <span class="cabeçalho__menu-hamburguer"></span>
+        </label>
+        <img class="logo__mobile" src="../Assets/quebrada.jpeg" alt="Logo da marca">
+        <nav class="menu">
+                <ul>
+                    <li><a onclick="abrirPagina()" href="#">Novidades</a></li>
+                    <li><a href="#">Maquiagem</a>
+                        <ul>
+                            <li class="lista-menu__item"><a id="batom" href="#">Batom e brilho labial</a></li>
+                            <li class="lista-menu__item"><a id="bases">Bases</a></li>
+                            <li class="lista-menu__item"><a href="#">Pó e blushes</a></li>
+                            <li class="lista-menu__item"><a id="#=Paletas">Paletas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cuidados com a pele</a>
+                        <ul>
+                            <li class="lista-menu__item"><a id="limpeza">Limpeza</a></li>
+                            <li class="lista-menu__item"><a id="Hidratacao">Hidratação</a></li>
+                            <li class="lista-menu__item"><a id="Esfoliação">Esfoliação</a></li>
+                            <li class="lista-menu__item"><a id="Kit">Kit básico</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cuidados capilares</a>
+                        <ul>
+                            <li class="lista-menu__item"><a href="#">Shampoo e Condicionador</a></li>
+                            <li class="lista-menu__item"><a href="#">Hidratação</a></li>
+                            <li class="lista-menu__item"><a href="#">Nutrição</a></li>
+                            <li class="lista-menu__item"><a href="#">Umectação</a></li>
+                            <li class="lista-menu__item"><a href="#">Finalizadores</a></li>
+                            <li class="lista-menu__item"><a href="#">Kit rotina capilar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        <div class="icons">
+        <img src="../Assets/heart.svg" alt="Lista de favoritos" class= "banner__imagem">
+        <img src="../Assets/cart2.svg" alt="Carrinho de compras" class= "banner__imagem">
+        <img src="../Assets/person.svg" alt="Usuario" class= "banner__imagem">
+        </div>
+    </section>
+
+    <section class="intro">
+        <img src="../Assets/batomBanner.svg" alt="Mulher de pele negra, com batom em tom avermelhado" width="100%">
+    </section>
+
+    <div class="container__carrossel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/batomTracta.png" alt=" Batom efeito matte, seco, com tom nude">
+                        <h2 class="titulo__negrito__produtos">Tracta Soft Matte Stronger - Batom Líquido 4ml</h2>
+                        <h3 class="preco">R$12,90</h3>
+                        <p class="descricao__produtos">Batom liquido cremoso, com acabento matte. Sensação aveludada e agradavel nos labios.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/glossBubbaloo.png" alt="">
+                        <h2 class="titulo__negrito__produtos">Gloss Labial Intense Bubbaloo Vermelho Morango 5Ml</h2>
+                        <h3 class="preco">R$29,90</h3>
+                        <p class="descricao__produtos">Acabamento de brilho com efeito molhado, desliza confortavelmente nos lábios.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/glossIntense.png" alt=" Gloss labial translucido, com particulas douradas">
+                        <h2 class="titulo__negrito__produtos">Gloss Labial Intense Bubbaloo Vermelho Morango 5Ml - O Boticário</h2>
+                        <h3 class="preco">R$39,90</h3>
+                        <p class="descricao__produtos">Efeito molhado, textura confortável não pegasoja. Possuí particulas douradas de brilho.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/glossMelissa.png" alt=" Gloss labial, em tom pink">
+                        <h2 class="titulo__negrito__produtos">Gloss Labial Intense Melissa pink 5,5ml</h2>
+                        <h3 class="preco">R$25,00</h3>
+                        <p class="descricao__produtos">Efeito glossy molhado para olhos e boca.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/glossDaPop.png" alt= "Brilho labial transparente, para a região dos labios">
+                        <h2 class="titulo__negrito__produtos">Dailus Incolor - Lip Gloss 3ml</h2>
+                        <h3 class="preco">R$12,50</h3>
+                        <p class="descricao__produtos">Lipgloss que proporciona brilho intenso, sem textura pegajosa e nem escorre</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/glossMelu.png" alt=" Brilho labial hidratante, hidratante">
+                        <h2 class="titulo__negrito__produtos">LIP GLOSS MELU BY RUBY ROSE - GLOSS LABIAL 2,5ML</h2>
+                        <h3 class="preco">R$15,90</h3>
+                        <p class="descricao__produtos">Brilho gloss, textura confortável nos labios, formula hidratante e rejuvescedora.</p>
+                    </div>
+                </div>
+                <!-- Repeat more swiper-slide elements as needed -->
+            </div>
+            <!-- Navigation arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div class="container__carrossel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/batomVizzela.png" alt=" Batom efeito matte, cor intensa em tom avermelhado">
+                        <h2 class="titulo__negrito__produtos">Batom Bala Vizzela Lipstick Cor 02 - Corajosa</h2>
+                        <h3 class="preco">R$12,90</h3>
+                        <p class="descricao__produtos">Batom matte de longa duração, textura aveludada e alta pigmentação.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/batomBT.png" alt="">
+                        <h2 class="titulo__negrito__produtos">Bruna Tavares BT Morgana - 4ml</h2>
+                        <h3 class="preco">R$37,90</h3>
+                        <p class="descricao__produtos">Batom liquído matte, com textura cremosa e acabamento aveludado. </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/batomMelu.png" alt=" Gloss labial translucido, com particulas douradas">
+                        <h2 class="titulo__negrito__produtos">Batom Líquido Matte Melu - Peanut Butter</h2>   
+                        <h3 class="preco">R$21,90</h3>
+                        <p class="descricao__produtos">Batom matte com componentes hidratantes, cuidado suave para os lábios com textura cremosa.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/batomMM.png" alt=" Gloss labial, em tom pink">
+                        <h2 class="titulo__negrito__produtos">Batom Líquido Creamy Matte Cor Hera.</h2>
+                        <h3 class="preco">R$12,00</h3>
+                        <p class="descricao__produtos">Batom matte de cor intensa, textura cremosa com longa duração nos lábios.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/batomDaPop.png" alt= "Brilho labial transparente, para a região dos labios">
+                        <h2 class="titulo__negrito__produtos">Batom Líquido Matte Dapop - Cor 01</h2>
+                        <h3 class="preco">R$15,90</h3>
+                        <p class="descricao__produtos">Efeito matte de longa duração, cor vibrante e boa pigmentação. </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/batomLatika.png" alt=" Brilho labial hidratante, hidratante">
+                        <h2 class="titulo__negrito__produtos">Batom Latika Líquido Lip Matte 4ml - Cor 23</h2>
+                        <h3 class="preco">R$18,90</h3>
+                        <p class="descricao__produtos">Batom matte, cor intensa com alta pigmentação, não borra e nem craquela;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <hr/>
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo"><img src="../Assets/logo.branca.jpeg" alt=""></h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista__titulo">Dih Quebrada</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Quem Somos</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Atendimento ao Cliente</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Política de Envio e Entregas</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Política de Troca e Devolução</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__link">Lojas fisícas</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista__titulo">Minha conta</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__dados">Meus pedidos</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__dados">Dados Pessoais</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <a href="#" class="lista-rodapé__dados">Alterar senha</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+
+
+    

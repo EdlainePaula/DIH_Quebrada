@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../main.js" defer></script>
+ 
+    
+</head> 
+<body>
+    <header class="cabecalho">
+       <img class="caminhao__frete" src="../Assets/Union.svg" id="caminhão"></i>
+       <h1 class= "caminhao__frete"><b class="titulo__negrito"> FRETE GRÁTIS</b> ACIMA DE R$130,00</h1>
+    </header>
+        <section class="container">
+            <a href="index.html">
+                <img class= "logo__tela" src="../Assets/quebrada.jpeg" alt="" width="90vw">
+            </a>
+            <input id="inputBusca" type=" search" class="banner__pesquisa" placeholder="O que você procura?">
+            <input type="checkbox" id="menu" class="container__botao banner__imagem">
+            <label for="menu" >
+                <span class="cabeçalho__menu-hamburguer"></span>
+            </label>
+            <img class="logo__mobile" src="../Assets/quebrada.jpeg" alt="Logo da marca">
+            <nav class="menu">
+                <ul>
+                    <li><a onclick="abrirPagina()" href="#">Novidades</a></li>
+                    <li><a href="#">Maquiagem</a>
+                        <ul>
+                            <li class="lista-menu__item"><a id="batom" href="#">Batom e brilho labial</a></li>
+                            <li class="lista-menu__item"><a id="bases">Bases</a></li>
+                            <li class="lista-menu__item"><a href="#">Pó e blushes</a></li>
+                            <li class="lista-menu__item"><a id="#=Paletas">Paletas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cuidados com a pele</a>
+                        <ul>
+                            <li class="lista-menu__item"><a href="#" id="limpeza">Limpeza</a></li>
+                            <li class="lista-menu__item"><a href="#" id="Hidratacao">Hidratação</a></li>
+                            <li class="lista-menu__item"><a href="#" id="Esfoliação">Esfoliação</a></li>
+                            <li class="lista-menu__item"><a href="#" id="Kit">Kit básico</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cuidados capilares</a>
+                        <ul>
+                            <li class="lista-menu__item"><a href="#">Shampoo e Condicionador</a></li>
+                            <li class="lista-menu__item"><a href="#">Hidratação</a></li>
+                            <li class="lista-menu__item"><a href="#">Nutrição</a></li>
+                            <li class="lista-menu__item"><a href="#">Umectação</a></li>
+                            <li class="lista-menu__item"><a href="#">Finalizadores</a></li>
+                            <li class="lista-menu__item"><a href="#">Kit rotina capilar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <img src="../Assets/heart.svg" alt="Lista de favoritos" class= "banner__imagem">
+                <img src="../Assets/cart2.svg" alt="Carrinho de compras" class= "banner__imagem">
+                <img src="../Assets/person.svg" alt="Usuario" class= "banner__imagem">
+            </div>
+        </section>
+
+    <section class="intro__pagina__inicial">
+        <img class="intro__imagem" src="../Assets/cuidadocapilar 1.png" width="40%">
+        <div class="temporizador__container">
+            <h1>POR TEMPO LIMITADO</h1>
+            <div class="temporizador"></div>
+        </div>
+        <img class="intro__imagem" src="../Assets/banner_min 1.png"width="40%">
+
+    </section>
+
+    <div id="timer"></div>
+
+    <h1 class="carrossel__titulo">VOCÊ TAMBÉM VAI AMAR</h1>
+    <div class="container__carrossel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/baseMM.png.png" alt=" Base liquida, tom para peles negras">
+                        <h2 class="titulo__negrito__produtos">Base Líquida Matte Cover Up Mari Maria - Cor 22 </h2>
+                        <h3 class="preco">R$39,90</h3>
+                        <p class="descricao__produtos">Pele aveludada e uniforme sem craquelar!É resistente à água e ao suor, oil free e não acumula nos poros.</p>
+                      
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/rimelLuisance.png.png" alt=" Rimel para olhos, embalagem circular em tom salmão">
+                        <h2 class="titulo__negrito__produtos">Mascara de Cilios Wave Lash - Luisance</h2>
+                        <h3 class="preco">R$20,90</h3>
+                        <p class="descricao__produtos">Mascara de cílios Wave Lash, alonga, define e da volume.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/primerDaPop.png" alt="Primer facial para uso antes da maquiagem, para melhor acabamento">
+                        <h2 class="titulo__negrito__produtos">Primer facial efeito Glow - Summer DaPop 30ml </h2>
+                        <h3 class="preco">R$30,00</h3>
+                        <p class="descricao__produtos">Com textura levinha e cobertura de efeito Glow, nosso primer proporciona efeito aveludado e garante máxima duração da make</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/contornoStick.png.png" alt=" Base liquida, tom para peles negras">
+                        <h2 class="titulo__negrito__produtos">Bastão de Contorno Facial Chubby Stick</h2>
+                        <h3 class="preco">R$169,90</h3>
+                        <p class="descricao__produtos">Bastão para contornar e definir os ângulos do rosto com acabamento matte.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/poFenzza.png.png" alt="Pó solto facial, em tom amarelo, indicado para acabemento em pele negra">
+                        <h2 class="titulo__negrito__produtos">Pó Banana Fixador Pink - Fenzza </h2>
+                        <h3 class="preco">R$15,90</h3>
+                        <p class="descricao__produtos">Pó solto e super fininho. Formulado com pigmentos micronizados o que ajuda na aplicação e no acabamento da maquiagem</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/baseNegraRosa.png.png" alt="Base liquida para peles negras">
+                        <h2 class="titulo__negrito__produtos">Base Com FPS 15 Negra Rosa Dark 04 </h2>
+                        <h3 class="preco">R$55,90</h3>
+                        <p class="descricao__produtos">Hidrata, ilumina, suaviza e disfarça imperfeições na pele.</p>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/poBT.png.png" alt="Ilumindador em pó, tom dourado">
+                        <h2 class="titulo__negrito__produtos">Iluminador Light Bronze 9g - Bruna Tavares </h2>
+                        <h3 class="preco">R$39,90</h3>
+                        <p class="descricao__produtos">Possui textura macia e agradável a pele,proporciona efeito radiante, alta cobertura, uniformização e brilho intenso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <h1 class="carrossel__titulo">MAIS VENDIDOS</h1>
+    <div class="container__carrossel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/oleoElseve.png.png" alt="Oleo capilar, marca Elseve, embalagem de 100ml em tons dourados">
+                        <h2 class="titulo__negrito__produtos">Óleo Extraordinário Elseve L'Oréal Paris Tratamento Sublime Reconstrutor 100ml </h2>
+                        <h3 class="preco">R$37,99</h3>
+                        <p class="descricao__produtos">Hidrata até os cabelos mais secos, fornecendo-lhes nutrição, maciez e brilho intenso.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/CREOULA 1.png" alt="Creme de pentear Creoula, para cabelos crespos e cacheados da marca LOLLA COSMETICOS, embalagem azul e laranja.">
+                        <h2 class="titulo__negrito__produtos">Lola Cosmetics Creoula - Creme de Pentear 500g </h2>
+                        <h3 class="preco">R$39,90</h3>
+                        <p class="descricao__produtos">Nutre os fios e modela, para cachos cheios e definidos. Proporciona maciez e muito brilho.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/rubySkin.png.png" alt="Sabonete liquido para limpeza facial da marca Ruby Rose, embalagem branca e amarela">
+                        <h2 class="titulo__negrito__produtos">Sabonete Cremoso Facial Ruby Skin On Off Ruby Rose 100ml</h2>
+                        <h3 class="preco">R$17,50</h3>
+                        <p class="descricao__produtos">O Sabonete Cremoso Facial promove uma limpeza equilibrada para a pele.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/oleoBoticario.png.png" alt="Oleo corporal fragancia ameixa negra da marca OBoticario, linha NativaSpa, emballagem em tom roxo">
+                        <h2 class="titulo__negrito__produtos">Óleo Hidratante Corporal Nativa SPA Ameixa Negra 200ml </h2>
+                        <h3 class="preco">R$88,00</h3>
+                        <p class="descricao__produtos">Óleo 100% Vegetal, proporciona hidratação profunda, perfumação intensa e pele macia</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/escovaRaquete.png.png" alt="Escova para cabelos, formato retangular, em cor roxa e azul">
+                        <h2 class="titulo__negrito__produtos">Escova Raquete Marco Boni Free Flex </h2>
+                        <h3 class="preco">R$25,79</h3>
+                        <p class="descricao__produtos">Com cerdas flexíveis e em dupla altura, a Free Flex proporciona um desembaraçar suave, diminuindo a quebra e perda dos fios.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/rexona.png.png" alt="Desodorante antitranspirante feminino, textura cremosa da marca Rexona.">
+                        <h2 class="titulo__negrito__produtos">Desodorante Rexona Clinical Extra Dry Antitranspirante 96h Creme 58g </h2>
+                        <h3 class="preco">R$37,99</h3>
+                        <p class="descricao__produtos">Desodorante antitranspirante desenvolvido exclusivamente para o universo feminino.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/dabelle,png.png" alt="Shampoo e condicionador da marca DaBelle, embalagem rosa e detalhes perolados ao centro">
+                        <h2 class="titulo__negrito__produtos">Kit Shampoo e Condicionador Resgata Fios - DaBelle</h2>
+                        <h3 class="preco">R$17,99</h3>
+                        <p class="descricao__produtos">Ideal para manutenção do tratamento e reconstrução.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div class="content">
+                        <img class="coracao" src="../Assets/icon _heart_.svg" height="20px">
+                        <img class="imagens__carrosel" src="../Assets/touca.png.png" alt="Toucas de cetim para uso noturno">
+                        <h2 class="titulo__negrito__produtos">Duas toucas de cetim </h2>
+                        <h3 class="preco">R$25,90</h3>
+                        <p class="descricao__produtos">Toucas de dupla face, protegem o cabe,o do atrito, evitando o frizz.</p>
+                    </div>
+                </div>
+                <!-- Repeat more swiper-slide elements as needed -->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="card">
+            <div class="card__descrição">
+                <div class="descrição">
+                    <h3 class="descricao__titulo">SKIN CARE</h3>
+                    <img class = "img__card" src="../Assets/cuidado.jpeg" >
+                    <h2 class="descrição__titulo-post">Autocuidado: um ato de amor próprio e resistência.</h2>
+                    <p class="descricao__paragrafo">
+                        Cuidar de si por dentro e por fora, é buscar sua melhor versão e o amor próprio enfrentando as adversidades na jornada de uma mulher, é se compreender e celebrar a intensidade que é ser você mesma! 
+                    </p>
+                    <p class="descricao__paragrafo">
+                        Ame-se! 
+                    </p>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+      <hr />
+
+        <footer class="rodapé">
+            <h2 class="rodapé__titulo"><img src="../Assets/logo.branca.jpeg" alt=""></h2>
+            <ul class="lista-rodapé">
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista__titulo">Dih Quebrada</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista-rodapé__link">Quem Somos</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista-rodapé__link">Atendimento ao Cliente</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista-rodapé__link">Política de Envio e Entregas</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista-rodapé__link">Política de Troca e Devolução</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista-rodapé__link">Lojas fisícas</a>
+                </li>
+            </ul>
+
+            <ul class="lista-rodapé">
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista__titulo">Minha conta</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista-rodapé__dados">Meus pedidos</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista-rodapé__dados">Dados Pessoais</a>
+                </li>
+                <li class="lista-rodapé__item">
+                    <a href="#" class="lista-rodapé__dados">Alterar senha</a>
+                </li>
+            </ul>
+        </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../main.js"></script> 
+</body>
+
+</html>
+

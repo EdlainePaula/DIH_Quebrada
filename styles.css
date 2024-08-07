@@ -1,12 +1,14 @@
-@import url(Style/header.css);
-@import url(reset.css);
-@import url(banner.css);
-@import url(carrossel.css);
-@import url(topico.css);
-@import url(Intro.css);
-@import url(rodape.css);
+@import url(Style.css/header.css);
+@import url(Style.css/reset.css);
+@import url(Style.css/banner.css);
+@import url(Style.css/carrossel.css);
+@import url(Style.css/topico.css);
+@import url(Style.css/intro.css);
+@import url(Style.css/rodape.css);
+@import url(novidades.html);
+@import url(main.js);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,7 +30,17 @@
 
 body{
     background-color: var(--branco);
+    padding: 0;
+    margin: 0 auto;
     
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fac213;
+    padding: 0.3em;
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
