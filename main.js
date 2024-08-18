@@ -7,7 +7,7 @@ function contadorDeTempo(){
     const ct= new Date();
     console.log('ct = ${ct}');
 
-    const tf= new Date(2024, 07, 30, 00, 00, 00);
+    const tf= new Date(2024, 8, 30, 0o0, 0o0, 0o0);
     console.log('tf = ${tf}');
 
     const deltaT= tf - ct;

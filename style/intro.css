@@ -8,10 +8,15 @@
     background-color: #FEF2CE;
    }
 
+   .intro__pequeno{
+    display: none;
+   }
+
    .intro{
     display: flex;
     align-items: center;
     margin-top: 110px;
+    
    }
    
    .temporizador__container{
@@ -72,6 +77,31 @@
    .lupa__pesquisa{
        display:block;
    }
+
+   .intro__pagina__inicial{
+    margin: 0;
+
+   }
+
+   .intro__pequeno{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+   }
+
+   .intro{
+    display: flex;
+    margin-top: 2em;
+    
+   }
+ 
+
+   .temporizador__container{
+    display: none;
+
+   }
    
    .lupa__pesquisa{
        display: flex;
@@ -87,13 +117,8 @@
    
    .intro__imagem{
        display: none;
+       
    }
    
-
-   .temporizador__container{
-    padding: 0;
-    display: flex;
-    width: 100%;
-   }
    }
    

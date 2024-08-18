@@ -1,10 +1,10 @@
-@import url(Style.css/header.css);
-@import url(Style.css/reset.css);
-@import url(Style.css/banner.css);
-@import url(Style.css/carrossel.css);
-@import url(Style.css/topico.css);
-@import url(Style.css/intro.css);
-@import url(Style.css/rodape.css);
+@import url(style/header.css);
+@import url(style/reset.css);
+@import url(style/banner.css);
+@import url(style/carrossel.css);
+@import url(style/topico.css);
+@import url(style/intro.css);
+@import url(style/rodape.css);
 @import url(novidades.html);
 @import url(main.js);
 

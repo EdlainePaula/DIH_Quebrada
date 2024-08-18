@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,64 +23,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <script src="../main.js" defer></script>
- 
-    
 </head> 
 <body>
     <header class="cabecalho">
         <img class="caminhao__frete" src="../Assets/Union.svg" id="caminhão"></i>
-        <h1 class= "caminhao__frete"><b class="titulo__negrito"> FRETE GRÁTIS</b> ACIMA DE R$130,00</h1>
+       <h1 class= "caminhao__frete"><b class="titulo__negrito"> FRETE GRÁTIS</b> ACIMA DE R$130,00</h1>
     </header>
+
     <section class="container">
         <a href="index.html">
-            <img class= "logo__tela" src="../Assets/quebrada.jpeg" alt="" width="90vw">
+        <img id="paginaInicial" class= "logo__tela" src="../Assets/quebrada.jpeg" alt="" width="90vw">
         </a>
-        <input id="inputBusca" type=" search" class="banner__pesquisa" placeholder="O que você procura?">
+        <input id="inputBusca" type="search" class="banner__pesquisa" placeholder="O que você procura?">
         <input type="checkbox" id="menu" class="container__botao banner__imagem">
-        <label for="menu" >
+        <label for="menu">
             <span class="cabeçalho__menu-hamburguer"></span>
         </label>
-        <img class="logo__mobile" src="../Assets/quebrada.jpeg" alt="Logo da marca">
+        <a href="index.html">
+            <img class="logo__mobile" src="../Assets/quebrada.jpeg" alt="Logo da marca">
+        </a>
         <nav class="menu">
-                <ul>
-                    <li><a onclick="abrirPagina()" href="#">Novidades</a></li>
-                    <li><a href="#">Maquiagem</a>
-                        <ul>
-                            <li class="lista-menu__item"><a id="batom" href="#">Batom e brilho labial</a></li>
-                            <li class="lista-menu__item"><a id="bases">Bases</a></li>
-                            <li class="lista-menu__item"><a href="#">Pó e blushes</a></li>
-                            <li class="lista-menu__item"><a id="#=Paletas">Paletas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Cuidados com a pele</a>
-                        <ul>
-                            <li class="lista-menu__item"><a id="limpeza">Limpeza</a></li>
-                            <li class="lista-menu__item"><a id="Hidratacao">Hidratação</a></li>
-                            <li class="lista-menu__item"><a id="Esfoliação">Esfoliação</a></li>
-                            <li class="lista-menu__item"><a id="Kit">Kit básico</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Cuidados capilares</a>
-                        <ul>
-                            <li class="lista-menu__item"><a href="#">Shampoo e Condicionador</a></li>
-                            <li class="lista-menu__item"><a href="#">Hidratação</a></li>
-                            <li class="lista-menu__item"><a href="#">Nutrição</a></li>
-                            <li class="lista-menu__item"><a href="#">Umectação</a></li>
-                            <li class="lista-menu__item"><a href="#">Finalizadores</a></li>
-                            <li class="lista-menu__item"><a href="#">Kit rotina capilar</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a onclick="abrirPagina()" href="#">Novidades</a></li>
+                <li><a href="#">Maquiagem</a>
+                    <ul>
+                          <li class="lista-menu__item"><a id="batom" href="#">Batom e brilho labial</a></li>
+                        <li class="lista-menu__item"><a id="bases" href="#">Base</a></li>
+                        <li class="lista-menu__item"><a href="#">Pó e blushes</a></li>
+                        <li class="lista-menu__item"><a href="#">Paletas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cuidados com a pele</a>
+                    <ul>
+                        <li class="lista-menu__item"><a href="#">Limpeza</a></li>
+                        <li class="lista-menu__item"><a href="#">Hidratação</a></li>
+                        <li class="lista-menu__item"><a href="#">Esfoliação</a></li>
+                        <li class="lista-menu__item"><a href="#">Kit básico</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cuidados capilares</a>
+                    <ul>
+                        <li class="lista-menu__item"><a href="#">Shampoo e Condicionador</a></li>
+                        <li class="lista-menu__item"><a href="#">Hidratação</a></li>
+                        <li class="lista-menu__item"><a href="#">Nutrição</a></li>
+                        <li class="lista-menu__item"><a href="#">Umectação</a></li>
+                        <li class="lista-menu__item"><a href="#">Finalizadores</a></li>
+                        <li class="lista-menu__item"><a href="#">Kit rotina capilar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <div class="icons">
-        <img src="../Assets/heart.svg" alt="Lista de favoritos" class= "banner__imagem">
-        <img src="../Assets/cart2.svg" alt="Carrinho de compras" class= "banner__imagem">
-        <img src="../Assets/person.svg" alt="Usuario" class= "banner__imagem">
+            <img src="../Assets/heart.svg" alt="Lista de favoritos" class="banner__imagem">
+            <img src="../Assets/cart2.svg" alt="Carrinho de compras" class="banner__imagem">
+            <img src="../Assets/person.svg" alt="Usuário" class="banner__imagem">
         </div>
+
     </section>
 
     <section class="intro">
-        <img src="../Assets/batomBanner.svg" alt="Mulher de pele negra, com batom em tom avermelhado" width="100%">
+        <img src="../Assets/batomBanner.svg" alt="Mulher de pele negra, com batom em tom avermelhado" width="100%" height="250%">
     </section>
 
     <div class="container__carrossel">
@@ -208,8 +212,7 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
-
-    <hr/>
+        <hr/>
 
     <footer class="rodapé">
         <h2 class="rodapé__titulo"><img src="../Assets/logo.branca.jpeg" alt=""></h2>
@@ -255,5 +258,6 @@
     
 </body>
 
+</html>
 
     

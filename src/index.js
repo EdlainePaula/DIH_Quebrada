@@ -32,7 +32,7 @@ app.put("/:id", async (req, res) =>{
         Preço: req.body.Preço,
         Quantidade: req.body.Quantidade
     })
-    return res.send(produtos)
+    return res.body(produtos)
 })
 
 
